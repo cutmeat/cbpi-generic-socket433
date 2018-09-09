@@ -1,5 +1,5 @@
 import logging
-from rpi_rf2 import RFDevice
+from rpi_rf import RFDevice
 from modules import cbpi
 from modules.core.hardware import ActorBase, SensorPassive, SensorActive
 from modules.core.props import Property
