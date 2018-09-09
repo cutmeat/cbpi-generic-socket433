@@ -8,6 +8,7 @@ import time
 
 @cbpi.actor
 class Socket433MHz(ActorBase):
+    protocol = Property.Select("Socket Protocol", configurable=True, description="Enter the Protocol that your socket is configured for. More protocols can be added in rpi_rf.")
     code_on = Property.Text("ON Code", configurable=True, description="Enter the code for turning the 433Hz socket on")
     code_off = Property.Text("OFF Code", configurable=True, description="Enter the code for turning the 433Hz socket off")
     pin =  Property.Text("GPIO PIN", configurable=True, description="Enter the code GPIO PIN for the rf transmitter")
